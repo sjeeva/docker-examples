@@ -1,22 +1,22 @@
 # CentOS - Installation
 1. Install yum-utils (for yum-configure-manager utility)
 
-   $ sudo yum install -y yum-utils```
+   $ sudo yum install -y yum-utils
    
 2. Add Docker CentOS Repo
    
-   ```$ sudo yum-config-manager \ 
+   $ sudo yum-config-manager \ 
           --add-repo \
-          https://download.docker.com/linux/centos/docker-ce.repo```
+          https://download.docker.com/linux/centos/docker-ce.repo
           
 3. Update yum package
 
-   ```$ sudo yum makecache fast```
+   $ sudo yum makecache fast
 
 4. Install Docker CE
 
-   ```$ sudo yum install docker-ce```
+   $ sudo yum install docker-ce
    
 5. Start Docker
    
-   ```$ sudo systemctl start docker```
+   $ sudo systemctl start docker
