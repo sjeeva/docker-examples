@@ -1,0 +1,11 @@
+
+## This script is meant for quick & easy install via:
+'curl -sSL https://get.docker.com/ | sudo sh'
+
+'wget -qO- https://get.docker.com/ | sudo sh'
+
+## For mac
+https://docs.docker.com/docker-for-mac/install/
+
+## For windows
+https://docs.docker.com/docker-for-windows/install/

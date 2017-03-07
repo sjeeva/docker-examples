@@ -1,0 +1,9 @@
+
+# This script is meant for quick & easy install via:
+## Using curl
+
+$ 'curl -sSL https://get.docker.com/ | sudo sh'
+
+## Using wget
+
+$ 'wget -qO- https://get.docker.com/ | sudo sh'
