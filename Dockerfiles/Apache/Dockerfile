@@ -4,6 +4,7 @@ FROM ubuntu:16.04
 RUN apt-get update && \
     apt-get install -y apache2 && \
     apt-get clean
+    
 EXPOSE 80
 
 # Launch apache2 server in the foreground
