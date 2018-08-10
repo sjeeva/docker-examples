@@ -1,0 +1,4 @@
+FROM ubuntu:18.04
+
+LABEL this=demo
+LABEL CLASS=DOCKER
