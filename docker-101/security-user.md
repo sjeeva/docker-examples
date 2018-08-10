@@ -19,6 +19,8 @@ RUN apt-get update && apt-get install -y tree
 USER 1000
 
 $ docker build -t uid .
+$ docker run --rm uid id -a
+
 ## Success case
 $ cat Dockerfile
 FROM ubuntu
@@ -35,6 +37,8 @@ FROM ubuntu
 
 RUN groupadd -g 1000 gdemo
 RUN useradd -u 1000 -g 1000 -m demo
+USER demo:gdemo
+
 
 $ docker build -t uid .
 $ docker run --rm uid id -a
