@@ -1,0 +1,7 @@
+docker network create demo1
+docker run -itd --net demo1 --name c1 busybox             
+docker run -itd --net demo1 --name c2 busybox             
+docker run -itd --net demo1 --name c3 busybox             
+docker run --rm --net demo1 busybox ping -c 2 c1
+docker run --rm --net demo1 busybox ping -c 2 c2
+docker run --rm --net demo1 busybox ping -c 2 c3
