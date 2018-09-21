@@ -1,0 +1,6 @@
+# DNS round robin...
+# docker network create rrdemo
+docker run -itd --net rrdemo --network-alias flaskapp --name fa1 jcdemo/flaskapp             
+docker run -itd --net rrdemo --network-alias flaskapp --name fa2 jcdemo/flaskapp             
+docker run -itd --net rrdemo --network-alias flaskapp --name fa3 jcdemo/flaskapp             
+docker run --net rrdemo sequenceiq/alpine-dig dig flaskapp
