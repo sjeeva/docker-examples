@@ -10,7 +10,7 @@ docker run --rm --net demo1 busybox ping -c 2 c3
 
 # DNS round robin...
 docker network create rrdemo
-docker run -itd --net rrdemo --network-alias rr --name c1 busybox             
-docker run -itd --net rrdemo --network-alias rr --name c2 busybox             
-docker run -itd --net rrdemo --network-alias rr --name c3 busybox             
+docker run -itd --net rrdemo --network-alias rr --name rrc1 busybox             
+docker run -itd --net rrdemo --network-alias rr --name rrc2 busybox             
+docker run -itd --net rrdemo --network-alias rr --name rrc3 busybox             
 docker run --net rrdemo sequenceiq/alpine-dig dig rr
